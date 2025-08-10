@@ -1,12 +1,6 @@
 {
   "version": 2,
   "name": "mossa-time-api",
-  "builds": [
-    {
-      "src": "api/*.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/api/(.*)",
