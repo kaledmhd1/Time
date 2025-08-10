@@ -1,0 +1,59 @@
+{
+  "api_name": "Mossa Time API",
+  "developer": "Mossa",
+  "version": "1.0.0",
+  "examples": {
+    "welcome": {
+      "url": "/api",
+      "method": "GET",
+      "description": "عرض معلومات API والنقاط المتاحة"
+    },
+    "add_uid_with_days": {
+      "url": "/api/add_uid?uid=mossa123&time=7&type=days",
+      "method": "GET",
+      "description": "إضافة UID صالح لمدة 7 أيام"
+    },
+    "add_uid_with_hours": {
+      "url": "/api/add_uid?uid=mossa456&time=12&type=hours",
+      "method": "GET",
+      "description": "إضافة UID صالح لمدة 12 ساعة"
+    },
+    "add_permanent_uid": {
+      "url": "/api/add_uid?uid=mossa999&permanent=true",
+      "method": "GET",
+      "description": "إضافة UID دائم بدون انتهاء صلاحية"
+    },
+    "check_time": {
+      "url": "/api/get_time/mossa123",
+      "method": "GET",
+      "description": "فحص الوقت المتبقي لـ UID"
+    },
+    "remove_uid": {
+      "url": "/api/remove_uid?uid=mossa123",
+      "method": "GET",
+      "description": "حذف UID من النظام"
+    },
+    "list_all_uids": {
+      "url": "/api/list_uids",
+      "method": "GET",
+      "description": "عرض جميع UIDs المسجلة في النظام"
+    }
+  },
+  "time_units": {
+    "seconds": "ثواني",
+    "minutes": "دقائق",
+    "hours": "ساعات",
+    "days": "أيام",
+    "months": "شهور",
+    "years": "سنوات"
+  },
+  "features": [
+    "إدارة كاملة لـ UIDs",
+    "دعم المدد المؤقتة والدائمة",
+    "تنظيف تلقائي للبيانات منتهية الصلاحية",
+    "واجهة API بسيطة وسهلة الاستخدام",
+    "استجابات JSON مفصلة",
+    "معالجة أخطاء شاملة"
+  ],
+  "author_signature": "Developed with ❤️ by Mossa"
+}
